@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %} Dashboard {% endblock %}
+{% load static %}
+{% block content %}
+<div class="container-fluid bg-dark ">
+
+    <div class="container">
+        <div class="px-4 py-5 text-center "> <span><img class="img-fluid mx-5" style="height: 42px; width: 54px;"
+                    src="{% static 'media/powerbilogo.png' %}" alt=""></span><br><br>
+            <h1 class="display-5 fw-bold rounded d-block bg-warning  "><span class="text-dark">Power BI</span> <span
+                    class="text-dark">Dashboard's</span>
+            </h1>
+
+
+        </div>
+        <div class="row text-center text-light lead" style="height: 56px;">
+            <p> <span class="text-warning">Power Bi</span> is an interactive <span class="text-warning">data
+                    visualization</span> software product developed by Microsoft. Power BI was first released to the
+                general
+                public on <span class="text-warning">July 24, 2015</span>.Power BI provides cloud-based BI (business
+                intelligence) services, known as " <span class="text-warning">Power BI Services</span>", along with a
+                desktop based interface, called " <span class="text-warning">Power BI Dekstop</span>".Here is some
+                example
+                of Power Bi dashboard</p>
+        </div>
+    </div>
+<br><br><br><br><br><br><br>
+    <div class="container-fluid dashback mt-5">
+
+        <div class="row">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'media/sales1.jpg' %}" class="d-block w-100 img-fluid"
+                            style="width:2336px; height: 533px;" alt="...">
+
+                    </div>
+
+                </div>
+
+            </div><br>
+            <div>
+                <p class="text-light text-center fs-3">Sales Dashboard</p>
+            </div>
+            <div class="row" style="width: 345px; margin: auto;">
+                <a href="sales" class="btn btn-warning text-dark text-center"><b>VIEW
+                        DASHBOARD</b></a>
+            </div>
+        </div>
+
+    </div><br><br>
+    <div class="container-fluid dashback">
+
+        <div class="row">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'media/c2.jpg' %}" class="d-block w-100 img-fluid"
+                            style="width:2336px; height: 533px;" alt="...">
+
+                    </div>
+
+                </div>
+
+            </div><br>
+            <div>
+                <p class="text-light text-center fs-3">IPL Dashboard 2021</p>
+            </div>
+            <div class="row" style="width: 345px; margin: auto;">
+                <a href="ipl" class="btn btn-warning text-dark text-center"><b>VIEW
+                        DASHBOARD</b></a>
+            </div>
+        </div>
+
+    </div><br><br>
+    <div class="container-fluid dashback">
+
+        <div class="row">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'media/c3.jpeg' %}" class="d-block w-100 img-fluid"
+                            style="width:2336px; height: 533px;" alt="...">
+
+                    </div>
+
+                </div>
+
+            </div><br>
+            <div>
+                <p class="text-light text-center fs-3">Cryptocurrency Dashboard</p>
+            </div>
+            <div class="row" style="width: 345px; margin: auto;">
+                <a href="crypto" class="btn btn-warning text-dark text-center"><b>VIEW
+                        DASHBOARD</b></a>
+            </div>
+        </div>
+
+    </div><br><br>
+
+    <div class=" row text-center">
+        <p><span class="text-light">Thank You For Visiting</span> <span> <b> <a class="text-decoration-none"
+                        id="loginhead" href="/"><span class="text-warning">Analytics</span><SPAN
+                            class="text-success"> Pad</SPAN></a></b></span></p>
+    </div><br>
+
+
+</div>
+
+
+
+
+{% endblock%}

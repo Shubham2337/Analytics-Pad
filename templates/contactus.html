@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %} ContactUs {% endblock %}
+{% load static %}
+{% block content %}
+<div class="container-fluid contact"><br>
+
+    <div class="container rounded bg-dark" style="width:488px;">
+        <div class="row text-center">
+            <p class="mt-1 fs-2"> <b> <a class="text-decoration-none" id="loginhead" href="/"><span class="text-warning px-2">Analytics</span><span class="text-primary px-2">Pad</span></a></b>
+            </p>
+            <h2 class="bg-dark text-light rounded" style="width: 444px; height:50px; margin:auto;"><b>Contact Us</b></h2>
+        </div>
+        <div class="row">
+            <form action="/contactus" method="post" class="d-flex mt-2 align-items-center text-light flex-column">
+                <div class="mb-3">
+                    {% csrf_token %}
+                    <label for="name1" class="form-label "><b>Name</b>:</label>
+                    <input type="text" class="form-control" required style="width: 444px;" name="name1" id="name1"
+                        placeholder="Enter Your Name">
+
+                </div>
+                <div class="mb-3 text-light">
+                    <label for="email1" class="form-label "><b>Email Address:</b></label>
+                    <input type="email1" class="form-control" required name="email1" style="width: 444px;"
+                        aria-describedby="emailHelp" id="email1" placeholder="Enter Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label "><b>Phone Number:</b></label>
+                    <input type="phone" class="form-control" required name="phone" style="width: 444px;" id="phone"
+                        placeholder="Enter Your Phone Number">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label "><b>Query</b>:</label>
+
+                    <textarea name="describe" class="form-control" required id="describe" cols="55" rows="5"
+                        placeholder="Describe Your Issue?"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-primary" style="width: 100px;"><b>submit</b></button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- adding css -->
+
+<style>
+    .contact {
+
+        background: url("../static/media/contactus.jpg");
+        background-size: cover;
+
+
+        height: 655px;
+
+
+    }
+</style>
+
+{% endblock%}
